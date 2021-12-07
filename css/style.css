@@ -75,7 +75,6 @@ body {
     padding: 8px 19px 8px 33px;
     border: none;
     border-radius: 2px;
-    margin-left: 9px;
     cursor: pointer;
 }
 
@@ -177,6 +176,24 @@ body {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 7px;
     margin-bottom: 30px;
+    
+}
+
+@keyframes slidein {
+    from {
+      margin-top: 75%;
+      width: 100%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
+
+.card {
+    animation-name: slidein;
+    animation-duration: 1s;
 }
 
 .card__main {
@@ -248,7 +265,7 @@ body {
     position: absolute;
     top: 50%;
     left: -15px;
-    margin-top: -2,5px;
+    margin-top: -2px;
     width: 5px;
     height: 5px;
     background: #8C8C8C;
@@ -439,4 +456,76 @@ body {
 .open {
     display: block;
     visibility: visible;
+}
+
+@media (max-width: 1024px) {
+
+.container {
+    width: 95%;
+}
+
+.logo {
+    display: none;
+}
+
+.cards {
+    justify-content: space-around;
+}
+}
+
+@media (max-width: 768px) {
+
+.promo__block {
+    background: #FFF1B8;
+}
+
+.button {
+    margin-left: 9px;
+}
+}
+
+@media (max-width: 425px) {
+
+.section__promo {
+    display: none;
+}
+
+.header_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    order: 2;
+    margin-top: 25px;
+}
+
+.sectin__title {
+    margin-right: 5px;
+}
+
+.section__restourants {
+    padding-top: 0;
+}
+}
+
+@media (max-width: 375px) {
+
+.card__img {
+    width: 100%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+
+.navigation__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 }
