@@ -76,6 +76,12 @@ body {
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    transition-duration: 500ms;
+    transition-property: all;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 .button__man {  
@@ -301,13 +307,13 @@ body {
 
 .social-img {
     margin-left: 25px;
+    transition-duration: 500ms;
+    transition-property: all;
 }
 
-
-
-
-
-
+.social-img:hover {
+    transform: scale(1.1);
+}
 
 .restour__desc {
     display: flex;
@@ -453,6 +459,10 @@ body {
 
 /*переключатель*/
 
+.button {
+    margin-left: 9px;
+}
+
 .open {
     display: block;
     visibility: visible;
@@ -479,9 +489,7 @@ body {
     background: #FFF1B8;
 }
 
-.button {
-    margin-left: 9px;
-}
+
 }
 
 @media (max-width: 425px) {
@@ -508,6 +516,18 @@ body {
 .section__restourants {
     padding-top: 0;
 }
+
+.restour__search {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-search {
+    margin-top: 10px;
+    max-width: 425px;
+    width: 100%;
+}
 }
 
 @media (max-width: 375px) {
@@ -527,5 +547,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.card__category {
+    display: none;
+}
+
+.card__price {
+    display: none;
 }
 }
